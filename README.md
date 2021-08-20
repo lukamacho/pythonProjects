@@ -1,2 +1,2 @@
 # pythonProjects
-pythonProjects
+Python projects from zero.
