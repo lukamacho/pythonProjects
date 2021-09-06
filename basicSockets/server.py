@@ -1,9 +1,8 @@
 import socket
 import threading
 
-
 HEADER = 64
-PORT = 5050
+PORT = 8080
 SERVER = socket.gethostbyname(socket.gethostname())
 ADDR = (SERVER, PORT)
 FORMAT = "utf-8"
@@ -12,7 +11,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
 
 def handle_client(conn,addr):
-    print(f"[New connectino] {addr} connected")
+    print(f"[New connection] {addr} connected")
     connected = True
 
     while connected:
